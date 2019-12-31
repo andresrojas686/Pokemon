@@ -5,6 +5,7 @@ export class PokemonesService {
   favoritos: Pokemon[];
   constructor() {
     console.log('Servicio Listo');
+    console.log(this.getFavoritos());
   }
   resultBusqueda( patron: string ) {
     const arrP = Array();
