@@ -8,7 +8,7 @@ export class PokemonesService {
   }
   resultBusqueda( patron: string ) {
     const arrP = Array();
-    fetch( `../../assets/json/todos.json` )
+    fetch( `./assets/json/todos.json` )
         .then( (res) => res.json() )
         .then( ( pokemons ) => {
           pokemons.forEach( ( pokemon ) => {
@@ -33,7 +33,7 @@ export class PokemonesService {
             const newAbilities: string[] = [];
             const newTypes: string[] = [];
             pokemon.types.forEach( ( type ) => {
-              fetch(`../../assets/json/elementos.json`)
+              fetch(`./assets/json/elementos.json`)
                   .then( ( res ) => res.json() )
                   .then( (elementos ) => {
                     let r = type.type.name;
@@ -90,7 +90,7 @@ export class PokemonesService {
               newAbilities.push(ability.ability.name);
             } );
             pokemones.types.forEach( ( type ) => {
-              fetch(`../../assets/json/elementos.json`)
+              fetch(`./assets/json/elementos.json`)
                   .then( ( res ) => res.json() )
                   .then( (elementos ) => {
                     let r = type.type.name;
@@ -129,7 +129,7 @@ export class PokemonesService {
               newAbilities.push(ability.ability.name);
             } );
             pokemones.types.forEach( ( type ) => {
-              fetch(`../../assets/json/elementos.json`)
+              fetch(`./assets/json/elementos.json`)
                   .then( ( res ) => res.json() )
                   .then( (elementos ) => {
                     let r = type.type.name;
