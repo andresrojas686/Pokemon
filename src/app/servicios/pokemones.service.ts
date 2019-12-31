@@ -79,43 +79,6 @@ export class PokemonesService {
           } );
     return result;
   }
-  getBusqueda(arP: number[]) {
-    const arrP = Array();
-    arP.forEach(( num ) => {
-      fetch( `https://pokeapi.co/api/v2/pokemon/${num}/`)
-          .then( ( res ) => res.json() )
-          .then( ( pokemones ) => {
-            const newAbilities: string[] = [];
-            const newTypes: string[] = [];
-            pokemones.abilities.forEach( ( ability ) => {
-              newAbilities.push(ability.ability.name);
-            } );
-            pokemones.types.forEach( ( type ) => {
-              fetch(`./assets/json/elementos.json`)
-                  .then( ( res ) => res.json() )
-                  .then( (elementos ) => {
-                    let r = type.type.name;
-                    // tslint:disable-next-line: prefer-for-of
-                    for ( let i = 0; i < elementos.length; i++ ) {
-                      if (elementos[i].clave === type.type.name) {
-                        r = elementos[i].valor;
-                      }
-                    }
-                    newTypes.push(r);
-                  } );
-            } );
-            const newPokemon: Pokemon = {
-              id : num,
-              name : pokemones.name,
-              abilities : newAbilities,
-              img : `https://pokeres.bastionbot.org/images/pokemon/${num}.png`,
-              types: newTypes
-            };
-            arrP.push(newPokemon);
-          } );
-    } );
-    return arrP;
-  }
 
   getFavoritos() {
     const arrP = Array();
