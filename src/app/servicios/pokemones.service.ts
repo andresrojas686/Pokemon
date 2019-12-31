@@ -129,7 +129,7 @@ export class PokemonesService {
               newAbilities.push(ability.ability.name);
             } );
             pokemones.types.forEach( ( type ) => {
-              fetch(`./assets/json/elementos.json`)
+              fetch(`https://kevinzav.github.io/Pokemon/assets/json/elementos.json`)
                   .then( ( res ) => res.json() )
                   .then( (elementos ) => {
                     let r = type.type.name;
