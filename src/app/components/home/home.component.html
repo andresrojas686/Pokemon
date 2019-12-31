@@ -1,0 +1,12 @@
+<div class="jumbotron animated fadeIn informacion">
+    <h1 class="display-4">¡Hola, amigos Pokemon!</h1>
+    <p class="lead">Esta es una pagina en donde podrás encontrar cualquier pokemon que gustes consultar. Espero que te diviertas. Te desea un buen día tu amigo Programador.</p>
+    <hr class="my-4">
+    <p *ngIf='leer' class="animated fadeIn fast">Al usar una aplicación como esta debes tomar en cuenta que debes hacerlo con toda la responsabilidad posible. Un Pikachu se encarga de supervisar tus actividades dentro de la pagina.
+        <br> El presente sitio es presentado y desarrollado sin fines de lucro, es un proyecto de desarrollo pensado para que te diviertas todo lo que quieras. Elaborado por Kevin Zavala, Desarrollador, fue creada con los componentes más especificos para
+        que se tenga una mejor comodidad al navegar por el sitio. Cuenta con una buena interactividad con el usuario haciendo que el mismo se divierta de una manera sana y sin peligro.
+    </p>
+    <p class="lead">
+        <button (click)="leer=!leer;cambiarTexto()" class="btn btn-primary btn-lg animated fadeIn" role="button">{{btnText}}</button>
+    </p>
+</div>

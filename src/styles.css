@@ -1,1 +1,146 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+/*Animaciones*/
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.fast {
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}
+
+.habilidad,
+.tipo {
+    margin-right: 4px;
+    color: #fff;
+}
+
+.veneno {
+    background-color: #b97fc9;
+}
+
+.planta {
+    background-color: #0c5e0c;
+}
+
+.electrico {
+    background-color: #b4c00c;
+}
+
+.psiquico {
+    background-color: #6822aa;
+    color: #fff;
+}
+
+.volador {
+    background-color: #0ec5c5;
+}
+
+.agua {
+    background-color: #3194d6;
+}
+
+.acero {
+    background-color: #81868a;
+}
+
+.normal {
+    background-color: #d89e5c;
+}
+
+.hielo {
+    background-color: #4686b1;
+}
+
+.tierra {
+    background-color: #583212;
+    color: #fff;
+}
+
+.fuego {
+    background-color: #f5390a;
+    color: #fff;
+}
+
+.dragon {
+    background-color: #1bca6a;
+}
+
+.bicho {
+    background-color: #ca6009;
+    color: #fff;
+}
+
+.hada {
+    background-color: #f381d1;
+}
+
+.lucha {
+    background-color: #dd101a;
+    color: #fff;
+}
+
+.roca {
+    background-color: #976236;
+    color: #fff;
+}
+
+.fantasma {
+    background-color: rgba(4, 17, 80, .65);
+    color: #fff;
+}
+
+.oscuro {
+    background-color: #000000;
+    color: #fff;
+}
+
+.boton {
+    margin-top: 20px;
+}
+
+footer {
+    color: white;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+footer p {
+    margin: 10px;
+}
+
+.informacion p {
+    letter-spacing: 2px;
+    font-size: 17px;
+}
+
+.center {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.contenido {
+    margin-bottom: 50px;
+}

@@ -1,0 +1,11 @@
+<div class="alert alert-danger center animated fadeIn" role="alert" *ngIf="pokemons.length===0">
+    No hay resultados de la busqueda : {{termino}}
+</div>
+<div class="alert alert-success center animated fadeIn" role="alert" *ngIf="pokemons.length > 0">
+    Resultados de la busqueda : {{termino}}
+</div>
+<hr>
+<div class="card-columns contenido">
+    <!--*ngFor='let h of heroes;let i=index;'-->
+    <app-pokemon-tarjeta (pokemonSelect)="verPokemon( $event )" [index]="pokemon.id" [pokemon]="pokemon" *ngFor="let pokemon of pokemons"></app-pokemon-tarjeta>
+</div>

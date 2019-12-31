@@ -1,0 +1,69 @@
+[{
+        "clave": "poison",
+        "valor": "veneno"
+    },
+    {
+        "clave": "grass",
+        "valor": "planta"
+    },
+    {
+        "clave": "electric",
+        "valor": "electrico"
+    },
+    {
+        "clave": "psychic",
+        "valor": "psiquico"
+    },
+    {
+        "clave": "flying",
+        "valor": "volador"
+    },
+    {
+        "clave": "water",
+        "valor": "agua"
+    },
+    {
+        "clave": "dragon",
+        "valor": "dragon"
+    },
+    {
+        "clave": "ground",
+        "valor": "tierra"
+    },
+    {
+        "clave": "ice",
+        "valor": "hielo"
+    },
+    {
+        "clave": "fire",
+        "valor": "fuego"
+    },
+    {
+        "clave": "steel",
+        "valor": "acero"
+    },
+    {
+        "clave": "bug",
+        "valor": "bicho"
+    },
+    {
+        "clave": "fairy",
+        "valor": "hada"
+    },
+    {
+        "clave": "fighting",
+        "valor": "lucha"
+    },
+    {
+        "clave": "rock",
+        "valor": "roca"
+    },
+    {
+        "clave": "ghost",
+        "valor": "fantasma"
+    },
+    {
+        "clave": "dark",
+        "valor": "oscuro"
+    }
+]

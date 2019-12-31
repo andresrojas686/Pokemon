@@ -1,0 +1,6 @@
+<h1 class='center'>Pokemons <small>¡favoritos!</small></h1>
+<hr>
+<div class="card-columns contenido">
+    <!--*ngFor='let h of heroes;let i=index;'-->
+    <app-pokemon-tarjeta (pokemonSelect)="verPokemon( $event )" [index]="favorito.id" [pokemon]='favorito' *ngFor='let favorito of favoritos'></app-pokemon-tarjeta>
+</div>
